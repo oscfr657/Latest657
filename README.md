@@ -12,7 +12,7 @@ Django backend.
 
 ### Django settings ###
 
-Add 'gallery657' and 'rest_framework' to the INSTALLED_APPS settings
+Add 'latest657' and 'rest_framework' to the INSTALLED_APPS settings
 
 Add this restframework settings
 
