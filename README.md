@@ -64,10 +64,6 @@ Create the div
 
 at the bottom of your index.html
 
-## Live example ##
-
-  www.oscfr.se/gallery
-
 ## For development ##
 
 > pip install pylint
