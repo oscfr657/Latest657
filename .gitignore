@@ -1,0 +1,6 @@
+todo.txt*
+**.pyc
+.idea
+node_modules/
+npm-debug.log
+.vscode

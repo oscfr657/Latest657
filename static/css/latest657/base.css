@@ -1,0 +1,48 @@
+
+#latest657 {
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.latest-post {
+  height: 100%;
+  width: 100%
+}
+
+.latest-post-text {
+  position: relative;
+}
+
+.latest-post-text p {
+  font-size: x-large;
+  font-weight: bold;
+  color: blue;
+}
+
+.latest-post img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: 100%;
+}
+
+.latest-post-audio {
+  position: relative;
+  top: 40%;
+  width: 100%;
+}
+
+.latest-post-audio audio {
+  width: 100%;
+}
+
+.latest-post-video {
+  height: 100%;
+}
+
+.latest-post-video video {
+  width: 100%;
+  max-height: 100%;
+}
