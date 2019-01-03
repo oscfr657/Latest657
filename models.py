@@ -44,8 +44,6 @@ def validate_video(media_file):
         file_type = magic.from_buffer(
             media_file.file.read(),
             mime=True)
-        print('test')
-        print(file_type)
         if not (file_type in video_types):
             raise ValidationError(
                 u'File type not supported!')

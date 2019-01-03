@@ -43,7 +43,7 @@ from django.conf.urls import include
 and
 
 ``` python
-url(r'^latest/', include('latest657.urls', namespace="latest657" ),
+url(r'^latest/', include(('latest657.urls', 'latest657'), namespace='latest657')),
 ```
 
 ## App as component ##

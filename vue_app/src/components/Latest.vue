@@ -8,7 +8,7 @@
     </div>
     <div class="latest-post" v-if="latest_post">
         <div class="latest-post-video" v-if="latest_post.video_file">
-          <video controls>
+          <video controls muted autoplay>
             <source :src="latest_post.video_file">
           </video>
         </div>
