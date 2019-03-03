@@ -1,15 +1,6 @@
 
 #latest657 {
-  position: relative;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-}
-
-.latest-post {
-  height: 100%;
-  width: 100%
+  margin: auto;
 }
 
 .latest-post-text {
@@ -20,11 +11,6 @@
   font-size: x-large;
   font-weight: bold;
   color: blue;
-}
-
-.latest-post {
-  width: 100%;
-  height: 100%;
 }
 
 .latest-post img {
@@ -38,16 +24,15 @@
   top: 40%;
   width: 100%;
 }
-
 .latest-post-audio audio {
-  width: 100%;
+  width: auto;
 }
 
 .latest-post-video {
   height: 100%;
 }
-
 .latest-post-video video {
-  width: 100%;
   max-height: 100%;
+  display: block;
+  margin: auto;
 }
