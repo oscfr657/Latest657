@@ -11,6 +11,7 @@
   font-size: x-large;
   font-weight: bold;
   color: blue;
+  text-align: center;
 }
 
 .latest-post img {
@@ -28,11 +29,9 @@
   width: auto;
 }
 
-.latest-post-video {
-  height: 100%;
-}
 .latest-post-video video {
   max-height: 100%;
+  max-width: 100%;
   display: block;
   margin: auto;
 }
