@@ -8,17 +8,20 @@
     </div>
     <div class="latest-post" v-if="latest_post">
         <div class="latest-post-video" v-if="latest_post.video_file">
-          <video controls muted autoplay>
+          <video controls muted autoplay loop>
             <source :src="latest_post.video_file">
           </video>
         </div>
         <div class="latest-post-image" v-if="latest_post.image_file">
-          <img v-if="latest_post.image_file" :src="latest_post.image_file" :alt="latest_post.text"/>
+          <img v-if="latest_post.image_file" :src="latest_post.image_file" :alt="latest_post.title"/>
         </div>
         <div class="latest-post-audio" v-if="latest_post.audio_file">
           <audio controls>
             <source :src="latest_post.audio_file">
           </audio>
+        </div>
+        <div class="latest-post-title" v-if="latest_post.title">
+          <h3>{{ latest_post.title }}</h3>
         </div>
         <div class="latest-post-text" v-if="latest_post.text">
           <p>{{ latest_post.text }}</p>

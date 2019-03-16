@@ -7,7 +7,7 @@ from latest657.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    fields = ('pub_date', 'text', 'image_file',
+    fields = ('pub_date', 'title', 'text', 'image_file',
               'audio_file', 'video_file')
     date_hierarchy = 'pub_date'
 

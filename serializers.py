@@ -5,9 +5,9 @@ from latest657.models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
-    
+
     class Meta:
         model = Post
         fields = (
-            'pk', 'pub_date', 'text',
+            'pk', 'pub_date', 'title', 'text',
             'image_file', 'audio_file', 'video_file')
