@@ -2,7 +2,6 @@
 #latest657 {
   margin: auto;
 }
-
 .latest-post-title {
   position: absolute;
 }
@@ -31,6 +30,9 @@
 }
 .latest-post-audio audio {
   width: auto;
+}
+.latest-post-video {
+  position: absolute;
 }
 .latest-post-video video {
   display: block;
