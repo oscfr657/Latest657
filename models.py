@@ -109,9 +109,9 @@ class Post(models.Model):
             return u'%s' % self.text
         return u'%s' % self.pk
 
-    def save(self):
+    def save(self, *args, **kwargs):
         # First doing a normal save
-        super(Post, self).save()
+        super(Post, self).save(*args, **kwargs)
         # Then we try to optimize
         try:
             file_type = magic.from_buffer(
