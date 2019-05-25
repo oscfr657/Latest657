@@ -93,6 +93,11 @@ class Post(models.Model):
         validators=[validate_video],
         blank=True,
         null=True)
+    cover_color = models.CharField(
+        max_length=50,
+        blank=True,
+        null=True,
+        default='#0000')
 
     objects = models.Manager()
 

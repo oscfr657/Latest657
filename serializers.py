@@ -10,4 +10,4 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = (
             'pk', 'pub_date', 'title', 'text',
-            'image_file', 'audio_file', 'video_file')
+            'image_file', 'audio_file', 'video_file', 'cover_color')

@@ -1,27 +1,36 @@
 
 #latest657 {
   margin: auto;
+  overflow: hidden;
 }
+.latest-post {
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+.latest-post-text,
 .latest-post-title {
-  position: absolute;
-}
-.latest-post-title h3 {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
-}
-.latest-post-text {
-  position: absolute;
+  color: white;
 }
 .latest-post-text p {
-  text-align: center;
-  margin: 0;
   font-size: larger;
   font-weight: bolder;
 }
-.latest-post img {
-  display: block;
-  margin: auto;
+.latest-post-image img {
   max-width: 100%;
-  height: 100%;
+}
+.latest-post-image {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 .latest-post-audio {
   position: relative;
@@ -33,9 +42,18 @@
 }
 .latest-post-video {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .latest-post-video video {
   display: block;
   margin: auto;
   max-width: 100%;
+}
+.latest-post-cover-color {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
