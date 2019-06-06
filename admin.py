@@ -10,6 +10,8 @@ class PostAdmin(admin.ModelAdmin):
     fields = ('pub_date', 'title', 'text', 'image_file',
               'audio_file', 'video_file', 'cover_color')
     date_hierarchy = 'pub_date'
+    list_display = ('pk', 'title', 'pub_date')
+    list_filter = ['pub_date']
 
 
 admin.site.register(Post, PostAdmin)
