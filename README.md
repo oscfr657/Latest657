@@ -12,7 +12,21 @@ Django backend.
 
 ### Django settings ###
 
-Add 'latest657' and 'rest_framework' to the INSTALLED_APPS settings
+Add to your settings file.
+
+``` Python
+SITE_ID = 1
+```
+
+add to INSTALLED_APPS
+
+``` Python
+    'django.contrib.sites',
+
+    'rest_framework',
+
+    'latest657',
+```
 
 Add this restframework settings
 

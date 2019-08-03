@@ -4,3 +4,4 @@ todo.txt*
 node_modules/
 npm-debug.log
 .vscode
+*__pycache__

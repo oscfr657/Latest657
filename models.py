@@ -13,6 +13,8 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.exceptions import ValidationError
 from django.db import models
 
+from django.contrib.sites.models import Site
+
 
 DIRECTORY = 'latest657'
 
@@ -74,7 +76,8 @@ def validate_video(media_file):
 
 
 class Post(models.Model):
-    # site = models.ForeignKey(Site, on_delete=models.CASCADE, blank=True, null=True)
+    site = models.ForeignKey(Site, on_delete=models.CASCADE, blank=True, null=True,
+        related_name='latest_post')
     pub_date = models.DateTimeField(blank=True, null=True)
     title = models.CharField(max_length=50, blank=True, null=True)
     text = models.CharField(max_length=200, blank=True, null=True)
