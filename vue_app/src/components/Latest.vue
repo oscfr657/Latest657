@@ -33,7 +33,8 @@ export default {
       error: false,
       latest_post: false,
       styleObject: {
-        background: '#0000'
+        background: '#0000',
+        opacity: '1'
       }
     };
   },
@@ -48,6 +49,7 @@ export default {
           this.latest_post = response.body;
           this.loading = false;
           this.styleObject.background = this.latest_post.cover_color;
+          this.styleObject.opacity = this.latest_post.cover_opacity;
         },
         response => {
           console.log("API error");

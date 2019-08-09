@@ -101,6 +101,11 @@ class Post(models.Model):
         blank=True,
         null=True,
         default='#0000')
+    cover_opacity = models.CharField(
+        max_length=50,
+        blank=True,
+        null=True,
+        default='1')
 
     objects = models.Manager()
 

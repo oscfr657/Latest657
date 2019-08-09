@@ -8,7 +8,7 @@ from latest657.models import Post
 
 class PostAdmin(admin.ModelAdmin):
     fields = ('site', 'pub_date', 'title', 'text', 'image_file',
-              'audio_file', 'video_file', 'cover_color')
+              'audio_file', 'video_file', 'cover_color', 'cover_opacity')
     date_hierarchy = 'pub_date'
     list_display = ('pk', 'title', 'pub_date')
     list_filter = ['site', 'pub_date']
